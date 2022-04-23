@@ -1,0 +1,15 @@
+.App {
+    padding: 0 20px;
+    height: 100vh;
+    width: 100vw;
+
+    .centered-pages {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
