@@ -9,8 +9,9 @@ import App from "./App"
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 
-// Importing the Bootstrap CSS
+// Importing dists
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
