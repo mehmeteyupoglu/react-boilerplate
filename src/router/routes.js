@@ -1,4 +1,4 @@
-import { Home, Products, NotFound } from "../pages";
+import { Home, Products, NotFound, Todos } from "../pages";
 
 const routes = [
     {
@@ -13,6 +13,13 @@ const routes = [
         path: "/products",
         exact: true,
         element: <Products />,
+        children: []
+    },
+    {
+        title: "Todos",
+        path: "/todos",
+        exact: true,
+        element: <Todos />,
         children: []
     },
     {

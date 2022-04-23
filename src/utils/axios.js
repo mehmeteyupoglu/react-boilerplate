@@ -6,7 +6,7 @@ import axios from "axios";
  * @params {object} baseURL: value
  */
 const axiosInstance = axios.create({
-  baseURL: "http://localhost:3000/",
+  baseURL: "https://jsonplaceholder.typicode.com/todos/1",
 });
 
 export default axiosInstance;
