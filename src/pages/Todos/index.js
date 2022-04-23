@@ -1,10 +1,17 @@
+import { useSelector, useDispatch } from 'react-redux'
+
 import CustomButton from "../../components/atoms/Button";
 import { useNavigate } from "react-router-dom";
 import { TodoService } from "../../service";
 
 import "./Todos.scss";
+import { useEffect } from 'react';
 
 function Todos() {
+
+    const state = useSelector((state) => state);
+    const { appReducer, todosReducer } = state;
+    const dispatch = useDispatch()
     const navigate = useNavigate();
 
     const handleClick = () => {
@@ -12,13 +19,15 @@ function Todos() {
     }
 
     const listTodos = async () => {
+        dispatch({ type: 'SET_LOADING', payload: true })
         try {
             const data = await TodoService.getTodos();
-            console.log(data);
+            dispatch({ type: "SET_TODOS", payload: data.data });
         } catch (error) {
             console.log("error while fetching data");
         } finally {
-            console.log('finally');
+            dispatch({ type: 'SET_LOADING', payload: false })
+            console.log('finally ',);
         }
     }
 
@@ -26,8 +35,8 @@ function Todos() {
         <div className="todos centered-pages">
             <h1>Todos</h1>
             <div>
-                <CustomButton title={"Back"} onClick={handleClick} />
-                <CustomButton title={"List Todos"} onClick={listTodos} />
+                <CustomButton title={"Back"} onClick={handleClick} loading={appReducer.isLoading} />
+                <CustomButton title={"List Todos"} onClick={listTodos} loading={appReducer.isLoading} async />
             </div>
         </div>
     );
