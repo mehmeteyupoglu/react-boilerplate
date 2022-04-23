@@ -1,16 +1,16 @@
 import { useSelector, useDispatch } from 'react-redux'
+import { ToastContainer } from 'react-toastify';
 
 import CustomButton from "../../components/atoms/Button";
 import { useNavigate } from "react-router-dom";
 import { TodoService } from "../../service";
 
 import "./Todos.scss";
-import { useEffect } from 'react';
 
 function Todos() {
 
     const state = useSelector((state) => state);
-    const { appReducer, todosReducer } = state;
+    const { appReducer } = state;
     const dispatch = useDispatch()
     const navigate = useNavigate();
 
@@ -37,6 +37,7 @@ function Todos() {
             <div>
                 <CustomButton title={"Back"} onClick={handleClick} loading={appReducer.isLoading} />
                 <CustomButton title={"List Todos"} onClick={listTodos} loading={appReducer.isLoading} async />
+                <ToastContainer />
             </div>
         </div>
     );

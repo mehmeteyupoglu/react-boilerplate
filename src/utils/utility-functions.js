@@ -1,3 +1,5 @@
+import { toast } from 'react-toastify';
+
 /**
  * @function
  * @param {string} query
@@ -35,4 +37,22 @@ export const mapProducts = (products) => {
             type: product_type,
         };
     });
+};
+
+/**
+ * @function
+ * @param {array} products
+ * @returns {array | null} with certain properties
+ */
+
+export const asyncToaster = (promise, {
+    loading = 'Loading',
+    success = 'Got the data',
+    error = 'Error when fetching'
+}) => {
+    toast.promise(promise, {
+        loading,
+        success,
+        error,
+    })
 };

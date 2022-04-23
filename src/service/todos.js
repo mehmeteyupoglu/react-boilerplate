@@ -1,4 +1,4 @@
-import { Request } from "../utils";
+import { Request, UtilityFunctions } from "../utils";
 
 const prefix = "";
 
@@ -9,6 +9,7 @@ const prefix = "";
  */
 
 export const getTodos = () => {
-
-    return Request.get(`${prefix}`);
+    const todoRequest = Request.get(`${prefix}`);
+    UtilityFunctions.asyncToaster(todoRequest, {});
+    return todoRequest;
 };
