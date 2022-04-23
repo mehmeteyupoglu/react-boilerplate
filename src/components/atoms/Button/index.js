@@ -1,11 +1,12 @@
 import "./Button.scss";
+import Button from 'react-bootstrap/Button';
 
-function Button() {
+function CustomButton({title, onClick, className, variant}) {
   return (
-    <button>
-        <span>Button</span>
-    </button>
+    <Button className={`primary ${className}`} onClick={onClick} variant={variant}>
+        {title || 'Button'}
+    </Button>
   );
 }
 
-export default Button;
+export default CustomButton;
