@@ -1,8 +1,6 @@
 import CustomButton from "../../components/atoms/Button";
 import { useNavigate } from "react-router-dom";
 
-import "./Home.scss";
-
 function Home() {
     const navigate = useNavigate();
 

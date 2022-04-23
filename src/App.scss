@@ -1,15 +1,10 @@
-.App {
-    padding: 0 20px;
-    height: 100vh;
-    width: 100vw;
+//components
+@import url('./components/atoms/Button/Button.scss');
+@import url('./components/molecules/ButtonGroup/ButtonGroup.scss');
+@import url('./components/organisms/CustomCard/CustomCard.scss');
 
-    .centered-pages {
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
-}
 
+// pages
+@import url('./pages/Home/Home.scss');
+@import url('./pages/NotFound/NotFound.scss');
+@import url('./pages/Todos/Todos.scss');

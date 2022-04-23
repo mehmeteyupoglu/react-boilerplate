@@ -1,6 +1,4 @@
-import "./Button.scss";
 import Button from 'react-bootstrap/Button';
-
 function CustomButton({ title, onClick, className, variant, loading, async }) {
     return (
         <>

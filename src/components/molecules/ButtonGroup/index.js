@@ -1,5 +1,4 @@
 import CustomButton from "../../atoms/Button";
-import "./ButtonGroup.scss";
 
 function ButtonGroup() {
   return (
