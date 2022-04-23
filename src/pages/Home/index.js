@@ -1,16 +1,20 @@
 import CustomButton from "../../components/atoms/Button";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 import "./Home.scss";
 
 function Home() {
+    const navigate = useNavigate();
+
+    const handleClick = () => {
+        navigate("/products");
+    }
+
     return (
         <div className="home centered-pages">
             <h1>Home</h1>
             <div>
-                <Link to="/products">
-                    <CustomButton title={"Go to Products"}/>
-                </Link>
+                <CustomButton title={"Go to Products"} onClick={handleClick} />
             </div>
         </div>
     );
