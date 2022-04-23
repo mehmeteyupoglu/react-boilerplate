@@ -3,7 +3,7 @@ import "./Products.scss";
 
 function Products() {
     return (
-        <div>
+        <div className="products-page centered-pages">
             <h1>Products</h1>
             <CustomButton title={'Go Back'} onClick={() => window.history.back()} />
         </div>

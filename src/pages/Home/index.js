@@ -1,17 +1,17 @@
 import CustomButton from "../../components/atoms/Button";
-import ButtonGroup from "../../components/molecules/ButtonGroup";
 import { Link } from "react-router-dom";
 
 import "./Home.scss";
 
 function Home() {
     return (
-        <div>
+        <div className="home centered-pages">
             <h1>Home</h1>
-            <Link to="/products">
-                <span className="description">This is the button: <CustomButton /></span>
-            </Link>
-            <span className="description">This is the button group: <ButtonGroup /></span>
+            <div>
+                <Link to="/products">
+                    <CustomButton title={"Go to Products"}/>
+                </Link>
+            </div>
         </div>
     );
 }
