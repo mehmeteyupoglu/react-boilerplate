@@ -8,7 +8,7 @@ From the very beginning of the project, a clean architecture, well-decomposed co
 
 ### Tools, conventions, design systems
 
-- [Conventional commits](www.conventionalcommits.org/) have been used throught the development process for a clean and consistent versioning
+- [Conventional commits](https://www.conventionalcommits.org/en/v1.0.0/) have been used throught the development process for a clean and consistent versioning
 - The project has been documented with the help of [jsdoc](https://jsdoc.app/)
 - To have a clean reusability of components and a solid reusable structure, [atomic design](https://bradfrost.com/blog/post/atomic-web-design/) principles helped
 
