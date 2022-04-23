@@ -1,6 +1,5 @@
 
 import image from "../../images/not-found.jpg";
-import "./NotFound.scss";
 
 function NotFound() {
     return (
