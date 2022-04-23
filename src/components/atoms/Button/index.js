@@ -2,12 +2,10 @@ import "./Button.scss";
 import Button from 'react-bootstrap/Button';
 
 function CustomButton({ title, onClick, className, variant, loading, async }) {
-    title = title || "Button"
-
     return (
         <>
             <Button
-                className={`primary mr-2 ${className}`}
+                className={`ms-2 ${className}`}
                 onClick={onClick}
                 variant={variant}
                 disabled={loading}
@@ -19,8 +17,15 @@ function CustomButton({ title, onClick, className, variant, loading, async }) {
                 }
             </Button>
         </>
-
     );
+}
+
+CustomButton.defaultProps = {
+    title: "Button",
+    className: "",
+    variant: "primary",
+    loading: false,
+    async: false,
 }
 
 export default CustomButton;

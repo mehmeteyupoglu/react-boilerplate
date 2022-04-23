@@ -14,8 +14,8 @@ function Home() {
         <div className="home centered-pages">
             <h1>Home</h1>
             <div>
-                <CustomButton title={"Go to Products"} onClick={() => handleClick('products')} />
-                <CustomButton title={"Go to Todos"} onClick={() => handleClick('todos')} />
+                <CustomButton title={"Go to Products"} onClick={() => handleClick('products')} className={'ms-2'}/>
+                <CustomButton title={"Go to Todos"} onClick={() => handleClick('todos')} className={'ms-2'}/>
             </div>
         </div>
     );
