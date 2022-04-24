@@ -27,11 +27,11 @@ The project was created within a couple days. For the detailed timeline of the d
 | March 14, 2021 19:00-20.00am |                   Write unit tests                    |
 | March 14, 2021 21:45-22.30am |                 Finalize the project                  |
 
+## Steps to follow 
+
 ## Project setup
 
-## Available Scripts
-
-In the project directory, you can run:
+Clone the repository to your local and run the available scripts provided below: 
 
 ### `yarn start`
 
@@ -55,3 +55,21 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+## Explanations on version control and working as a team
+
+After successfully setting up the project, the next step is to start working on it. Please follow the steps below:
+- Accept the task assigned
+- Read the description of the task
+- Put it in-progress 
+- Create the remote branch out of develop. 
+- - Format: [ type ]/[project name]-[task id]-[description ]
+- - Sample: _bugfix/KKS-12-Button disable issue_
+- Run ```git pull``` in the project directory
+- Switch to the dedicated branch
+- Implement your changes
+- Commit frequently under the same branch. Do not collect a chunk of changes to commit.
+- After you test your changes, please push your commits and create a pull request for the reviewer
+- Your PR should be in this direction: _dedicated-branch -> develop_
+- If anything goes wrong, please implement the requested changes in the same PR
+- In each session, do not forget to synch your branch with the _develop_ branch
