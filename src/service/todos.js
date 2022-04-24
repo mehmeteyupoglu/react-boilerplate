@@ -10,6 +10,8 @@ const prefix = "";
 
 export const getTodos = () => {
     const todoRequest = Request.get(`${prefix}`);
+
     UtilityFunctions.asyncToaster(todoRequest, {});
+
     return todoRequest;
 };
