@@ -63,7 +63,7 @@ After successfully setting up the project, the next step is to start working on 
 - Read the description of the task
 - Put it in-progress 
 - Create the remote branch out of develop. 
-- - Format: [ type ]/[project name]-[task id]-[description ]
+- - Format: [type]/[project name]-[task id]-[description]
 - - Sample: _bugfix/KKS-12-Button disable issue_
 - Run ```git pull``` in the project directory
 - Switch to the dedicated branch
