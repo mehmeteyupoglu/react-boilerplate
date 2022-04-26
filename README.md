@@ -73,4 +73,4 @@ After successfully setting up the project, the next step is to start working on 
 - Your PR should be in this direction: _dedicated-branch -> develop_
 - If anything goes wrong, please implement the requested changes in the same PR
 - In each session, do not forget to synch your branch with the _develop_ branch
-  - To do that, please merge ```main``` branch into ```develop``` branch
+  - To do that, please merge ```develop``` branch into ```dedicated``` branch
