@@ -1,11 +1,6 @@
-import { combineReducers, createStore } from "redux";
-import { appReducer, todosReducer} from "./reducers";
+import { appReducer, todosReducer } from "./reducers";
+import { configureStore } from "@reduxjs/toolkit";
 
-const rootReducer = combineReducers({
-  appReducer, todosReducer
+export const store = configureStore({
+  reducer: { appReducer, todosReducer },
 });
-
-export const store = createStore(
-  rootReducer,
-  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-);
