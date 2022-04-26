@@ -63,7 +63,7 @@ After successfully setting up the project, the next step is to start working on 
 - Read the description of the task
 - Put it in-progress 
 - Create the remote branch out of develop. 
-- - Format: [ type ]/[project name]-[task id]-[description ]
+- - Format: [type]/[project name]-[task id]-[description]
 - - Sample: _bugfix/KKS-12-Button disable issue_
 - Run ```git pull``` in the project directory
 - Switch to the dedicated branch
@@ -73,3 +73,4 @@ After successfully setting up the project, the next step is to start working on 
 - Your PR should be in this direction: _dedicated-branch -> develop_
 - If anything goes wrong, please implement the requested changes in the same PR
 - In each session, do not forget to synch your branch with the _develop_ branch
+- - To do that, please merge ```main``` branch into ```develop``` branch
